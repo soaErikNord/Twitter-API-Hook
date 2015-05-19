@@ -28,13 +28,13 @@ API Hook using SOA Software's Products to interact with the Twitter API.  Also, 
     + stop all PM and ND nodes
     + Run the configurator in update mode for all PM and ND instances:
         * Run this command, depending on your environment:
-            - Windows: <Gateway base dir>\sm70\bin\startup.bat configurator -Dsilent=true -DdeploymentName=Standalone -Dproperties=C:\\myprops.properties
-            - UNIX/Linux: <Gateway base dir>/sm70/bin/startup.sh configurator -Dsilent=true -Dproperties=/export/home/username/myprops.properties
+            - Windows: `<Gateway base dir>\sm70\bin\startup.bat configurator -Dsilent=true -DdeploymentName=Standalone -Dproperties=C:\\myprops.properties`
+            - UNIX/Linux: `<Gateway base dir>/sm70/bin/startup.sh configurator -Dsilent=true -Dproperties=/export/home/username/myprops.properties`
             - The myprops.propertis path must be the fully qualified path, and the file contents will look like:
-            <code>
+            ```
             container.instance.name=<instance name, e.g. PM>
             wizard.mode=update
-            </code>
+            ```
     + Using the SOA Admin Console, install the following Plug-ins in each PM container:
         * Akana PSO Persistence
     + Using the SOA Admin Console, install the following Plug-ins in each ND container:
