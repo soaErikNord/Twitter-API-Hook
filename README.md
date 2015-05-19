@@ -81,6 +81,7 @@ Steps:
 1-4) The consuming application requests an access token to use Twitter API's via Akana Software's API Gateway.  Twitter expects the api key and api secret to be passed in a Basic Authentication header on the message.  The grant type is a required parameter with the value of 'client_credentials':
 <br/>
 * Request:
+
     ```
         POST http://enord-macbook-pro.local:9920/oauth2/token HTTP/1.1
         Accept-Encoding: gzip,deflate
@@ -92,6 +93,7 @@ Steps:
         User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
     ```
 * Response:
+
     ```
         HTTP/1.1 200 OK
         Content-Type: application/json;charset=utf-8
@@ -120,6 +122,7 @@ Steps:
     ```
 5-8) The consuming application requests an actual API using the access token that was returned from Twitter's OAuth2 call:
 * Request:
+
     ```
         GET http://enord-macbook-pro.local:9920/twitterapihook/statuses/user_timeline.json?count=100&screen_name=twitterapi HTTP/1.1
         Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAArPfgAAAAAAEbfGdNpuDl%2FYCIC7Dx0%2FGgkbMEs%3DrX8NQm2O0a7eHUBGkhQ6ADfHgFGn2ZJEUvBcY5IoIc7rgpUkgK
@@ -129,6 +132,7 @@ Steps:
         User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
     ```
 * Response:
+
     ```
         [
           {
