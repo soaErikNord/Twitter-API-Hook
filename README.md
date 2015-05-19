@@ -120,6 +120,7 @@ Steps:
 
         {"token_type":"bearer","access_token":"AAAAAAAAAAAAAAAAAAAAAArPfgAAAAAAEbfGdNpuDl%2FYCIC7Dx0%2FGgkbMEs%3DrX8NQm2O0a7eHUBGkhQ6ADfHgFGn2ZJEUvBcY5IoIc7rgpUkgK"}
     ```
+
 5-8) The consuming application requests an actual API using the access token that was returned from Twitter's OAuth2 call:
 * Request:
 
