@@ -83,7 +83,7 @@ Steps:
 * Request:
 
     ```
-        POST http://enord-macbook-pro.local:9920/oauth2/token HTTP/1.1
+        POST /oauth2/token HTTP/1.1
         Accept-Encoding: gzip,deflate
         Content-Type: application/x-www-form-urlencoded
         Authorization: Basic eHlXeTUxZmFiYnpaMlBRRktvTVlJUDJVdzp2d2dxbjFRcU91d3E2UWdvRE54WUlQREhjSXh6bjRxTHBpOGJZT0RNaGlkblpWakRXWA==
@@ -125,7 +125,7 @@ Steps:
 * Request:
 
     ```
-        GET http://enord-macbook-pro.local:9920/twitterapihook/statuses/user_timeline.json?count=100&screen_name=twitterapi HTTP/1.1
+        GET /twitterapihook/statuses/user_timeline.json?count=100&screen_name=twitterapi HTTP/1.1
         Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAArPfgAAAAAAEbfGdNpuDl%2FYCIC7Dx0%2FGgkbMEs%3DrX8NQm2O0a7eHUBGkhQ6ADfHgFGn2ZJEUvBcY5IoIc7rgpUkgK
         Accept-Encoding: gzip
         Host: enord-macbook-pro.local:9920
@@ -228,3 +228,6 @@ Steps:
        }
     ]
     ```
+
+#### Reference
+[Twitter Application-Only](https://dev.twitter.com/oauth/application-only)
