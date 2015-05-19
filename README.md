@@ -75,11 +75,11 @@ API Hook using SOA Software's Products to interact with the Twitter API.  Also, 
 Twitter API offers using 2-legged OAuth2 to consume specific API's.  Akana Software's Twitter API Hook are successfully authenticated using Twitter's OAuth2 API's.
 
 The figure below shows the entire OAuth2 2-Legged Application-Only flow:
-
+![2-Legged OAuth](https://github.com/soaErikNord/Twitter-API-Hook/blob/master/src/2-leggedOauth.png "2-Legged OAuth")
 Steps:
 1-4) The consuming application requests an access token to use Twitter API's via Akana Software's API Gateway.  Twitter expects the api key and api secret to be passed in a Basic Authentication header on the message.  The grant type is a required parameter with the value of 'client_credentials':
     - Request:
-        <code>
+        ```
             POST http://enord-macbook-pro.local:9920/oauth2/token HTTP/1.1
             Accept-Encoding: gzip,deflate
             Content-Type: application/x-www-form-urlencoded
@@ -88,7 +88,7 @@ Steps:
             Host: enord-macbook-pro.local:9920
             Connection: Keep-Alive
             User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
-        <code>
+        ```
     - Response:
         <code>
             HTTP/1.1 200 OK
